@@ -1,0 +1,7 @@
+setup.sh <$GEAR_NAME>
+Script takes 1 parameter $GEAR_NAME and creates a new gear for deploying meteor.
+The git repository is located in $GEAR_DIRECTORY
+
+deploy.sh <$GEAR_NAME>
+deploys the project located in $METEOR_SOURCE into the gear at
+$GEAR_DIRECTORY/$GEAR_NAME

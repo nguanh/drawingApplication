@@ -1,0 +1,17 @@
+<!--- neues Template
+Enthält:
+button zum löschen
+checkbox
+und text
+-->
+
+<template name="task">
+  <!-- wenn checked123 eigenschaft von task erfüllt, setzte
+checked eigenschaft in css-->
+  <li class="{{#if checked}}checked{{/if}}">
+<!--wenn checkbox gesetzt wird, wird checked gesetzt-->
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked123" />
+    <button class="delete">&times;</button>
+    <span class="text">{{text}}</span>
+  </li>
+</template>

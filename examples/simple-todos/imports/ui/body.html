@@ -1,0 +1,32 @@
+
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Todo List</h1>
+     <form class="new-task">
+       <input type="text" name="text" placeholder="Type to add new tasks" />
+     </form>
+    </header>
+
+
+    <ul>
+      <!-- itetiere über Array des helpers , jeder wert
+          wird in das template task eingesetzt
+      -->
+      {{#each tasks}}
+        {{> task}}
+        <!-- Template 'task' wird hier included-->
+      {{/each}}
+    </ul>
+
+  </div>
+
+</body>
+
+
+<template name="taskold">
+
+  <li>{{text}}</li>
+
+</template>
